@@ -1,0 +1,210 @@
+{
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  max-width: 93em;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+img {
+  border-radius: 23px;
+}
+
+/* Image Credit */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: auto;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 14px;
+  padding: 12px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+body {
+  margin: 0;
+  font-family: 'MuseumBibleRegular';
+  font-size: 23px;
+
+}
+
+pre {
+  padding: 1rem 1.4rem;
+  max-width: 100%;
+  overflow: auto;
+  border-radius: 4px;
+  background: hsl(210, 28%, 93%);
+}
+
+/* Divider */
+.divider {								/* basics */
+            display: table;
+            font-size: 28px;
+            font-family: 'MuseumBibleRegular';
+            text-align: center;
+            width: 93%; 						/* width */
+            margin: 32px auto;					/* space above/below */
+            color: #D80002;
+        }
+        
+/* Sidebar */
+
+.sidenav {
+border-right: .26px solid #D50101;
+  height: 100%;
+  max-width: 23%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  padding-top: 23px;
+}
+
+
+/* Sidebar links */
+.sidenav a {
+  display: block;
+  color: #D80002;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #D50101;
+  color: white;
+}
+
+/* Sidebar for small screens */
+@media only screen and (max-width: 700px) {
+	.sidenav {
+	border-right: .26px solid #D50101;
+  	height: 100%;
+  	width: 12%;
+  	top: 0;
+    	bottom: 0;
+    	left: 0;
+    	float: none;
+  	background-color: #FFFFFF;
+  	overflow-x: hidden;
+  	position: fixed;
+  	padding: 2px 8px;
+  	font-size: 10px;
+	}
+	.sidenav a {
+  	display: block;
+  	color: #D80002;
+  	padding: 2px 8px;
+  	text-decoration: none;
+	}
+	.sidenav a:hover {
+	background-color: #D50101;
+        color: white;
+	}
+
+}
+
+
+/* Content Style */
+.content {
+  margin-left: 26%;
+  margin-right: 10%;
+  max-width: 93em;
+}
+
+
+/*Style buttons */
+.button {
+  font-family: 'MuseumBibleRegular';
+  display: inline-block;
+  border-radius: 12px;
+  background-color: #f44336;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 23px;
+  padding: 20px;
+  max-width: 230px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button1 {
+  background-color: white;
+  color: #828AB2;
+  border: 2px solid #828AB2;
+  max-width: 363px;
+}
+
+.button1:hover {
+  background-color: #828AB2;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: #828AB2;
+  border: 2px solid #828AB2;
+  width: 72px;
+  border-radius: 63%;
+}
+
+.button2:hover {
+  background-color: #828AB2;
+  color: white;
+}
+
+
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: cjk-ideographic;
+}
